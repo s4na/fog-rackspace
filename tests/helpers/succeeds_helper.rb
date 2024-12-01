@@ -2,7 +2,11 @@ module Shindo
   class Tests
     def succeeds
       test('succeeds') do
-        !!instance_eval(&Proc.new)
+        if block_given?
+          !!instance_eval { yield }
+        else
+          raise ArgumentError, "No block given to `succeeds`"
+        end
       end
     end
   end
