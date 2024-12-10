@@ -14,3 +14,4 @@ permissions:
 jobs:
   Shared:
     uses: s4na/fog-.github/.github/workflows/ci.yml@v1.6.0
+
