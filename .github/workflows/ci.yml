@@ -14,4 +14,3 @@ permissions:
 jobs:
   Shared:
     uses: fog/.github/.github/workflows/ci.yml@v1.4.0
-
